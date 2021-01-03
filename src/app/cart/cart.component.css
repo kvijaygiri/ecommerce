@@ -1,0 +1,115 @@
+.content-table{
+    border-collapse: collapse;
+    margin:25px 5;
+    font-size:0.9em;
+    width:99.5%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255,56,172,0.63);
+}
+.content-table thead tr{
+    background-color: #ff7aa8;
+    color:#ffffff;
+    text-align:left;
+    font-weight:bold;
+
+}
+.content-table th,
+.content-table td{
+    padding:12px 50px;
+}
+.content-table tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+.content-table tbody tr:nth-last-of-type(even){
+    background-color: #fff7fa;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom:2px solid #ff7aa8;
+}
+.content-table tbody tr.active-row{
+    font-weight: bold;
+    color:#f50057
+}
+.pagination pull-right{
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:480px;
+height:70px;
+padding:15px 35px;
+background:#fff;
+border-radius: 50px;
+box-shadow:0 0 5px rgba(0,0,0,0.125)
+}
+.wrapper ul{
+display:flex;
+text-align:center;
+}
+.wrapper ul li{
+    width:50px;
+    height:40px;
+    line-height: 40px;
+    margin:0 8px;
+    background:#fff;
+    color:#000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor:pointer;
+    border-radius: 5px;
+}
+.wrapper ul li:first-child{
+    border-radius:0;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.wrapper ul li:last-child{
+    border-radius:0;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.wrapper ul li:hover,
+.wrapper ul li.active{
+    background:#fd4141;
+    color:#fff;
+}
+.checkoutButton{
+    position: absolute;
+    padding:4px;
+    right:10;
+    width:10%;
+    height:30px;
+    border-radius:50px 20px;
+    outline:none;
+    border:none;
+    background-image:linear-gradient(to right,#f50057,#f500f5,#f500f5);
+    background-size:100%;
+    font-size:15px;
+    color:#fff;
+    font-family: "Poppins",sans-serif;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition:0.5s;
+    background-position:right;
+}
+.container{
+    position: absolute;
+    right:15%;
+    text-align: right;
+    top:620px;
+    
+}
+.total{
+    position: absolute;
+    right:0;
+    width:200px;
+    height:100px;
+    
+}
+.pagination{
+    position:absolute;
+    right:5%;
+    width:200px;
+    height: 100px;
+    top:330px
+}

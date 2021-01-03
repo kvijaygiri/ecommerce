@@ -1,0 +1,55 @@
+
+<div class="container">
+    <h1 align="center">CheckOut Page</h1>
+    <div class="form-group" [formGroup]="checkout">
+        Name : <input type="text" formControlName="Name" class="form-control"/>
+        <div *ngIf="checkout.controls['Name'].errors && checkout.controls['Name'].touched">
+            <span *ngIf="checkout.controls['Name'].errors.required">
+                Please Enter Your Name
+            </span>
+            <span *ngIf="checkout.controls['Name'].errors.minlength">
+                Your Name Atleast 6 Charcters
+            </span>
+            <span *ngIf="checkout.controls['Name'].errors.pattern">
+                Only Character Allowed
+            </span>
+            <span *ngIf="checkout.controls['Name'].errors.NameNotAllowed">
+                This Name Not Allowed
+            </span>
+            </div>
+            City:<input type="text" formControlName="City" class="form-control"/>
+           State:<input type="text" formControlName="State" class="form-control"/>
+          Gender :<input type="text" formControlName="Gender" class="form-control"/>
+           PhNumber: <input type="text" formControlName="PhNumber" class="form-control"/>
+           <div *ngIf="checkout.controls['PhNumber'].errors && 
+           checkout.controls['PhNumber'].touched">
+            <span *ngIf="checkout.controls['PhNumber'].errors.required">
+                Please Enter Your PhNumber    
+            </span>        
+                <span *ngIf="checkout.controls['PhNumber'].errors.minlength">
+                Your Ph.no Atleast 10 Number
+            </span>
+            <span *ngIf="checkout.controls['PhNumber'].errors.pattern">
+                Only Numbers Allowed
+            </span>
+            </div>
+           Address:<input type="text" formControlName="Address" class="form-control"/>
+        Pincode:<input type="text" formControlName="Pincode" class="form-control"/>
+           <div *ngIf="checkout.controls['Pincode'].errors && 
+           checkout.controls['Pincode'].touched">
+            <span *ngIf="checkout.controls['Pincode'].errors.required">
+                Please Enter Your Pincode    
+            </span>       
+                <span *ngIf="checkout.controls['Pincode'].errors.minlength">
+                Your Pincode atleast 6 Number
+            </span>
+            <span *ngIf="checkout.controls['Pincode'].errors.pattern">
+                Only Numbers Allowed
+            </span>
+            </div>
+            <br>
+           <button class="btn btn-info" routerLink="/cart">Back</button> 
+           &nbsp;
+           <button class="btn btn-success" routerLink="/thanks">Complete order</button>
+        </div>
+    </div>
