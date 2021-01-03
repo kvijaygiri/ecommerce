@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ecommerce-61fdc": {
+      "hosting": {
+        "ecommerce": [
+          "ecommerce-61fdc"
+        ]
+      }
+    }
+  }
+}
